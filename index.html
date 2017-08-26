@@ -1,0 +1,27 @@
+--- 
+layout: base
+title: 文章列表
+---
+
+<div class="excerpt">
+    <div class="date">
+        <span>{{site.posts[0].date | date: "%Y年%m月%d日"}}</span>
+    </div>
+    <div class="text">
+        {{ site.posts[0].excerpt }}
+    </div>
+    <div class="readMore">
+        <a href="{{site.posts[0].url}}">阅读更多</a>
+    </div>
+</div>
+<div class="list">
+    <h2>{{ page.title }}</h2>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span>{{ post.date | date: "%Y年%m月%d日" }} </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
