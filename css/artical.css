@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* align-items:  */
+    /* align-content:  */
+}
+.content{
+    width: 90%;
+    min-width: 400px;
+    border: 1px solid #cccccc;
+}
+.artical{
+    padding: 2% 8%;
+}
+.date{
+    padding-right: 5%;
+    text-align: right;
+}
+.back{
+    padding: 2% 5%;
+    margin: 2% 5%;
+    overflow: hidden;
+}
+.back a{
+    float: right;
+}

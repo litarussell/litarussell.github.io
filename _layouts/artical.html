@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="css/artical.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="date">
+            <!-- {{ page.date | date_to_string }} -->
+            {{ page.date | date: "%Y年%m月%d日" }}
+        </div>
+        <div class="artical">
+            {{ content }}
+        </div>
+        <div class="back">
+            <a href="{{ site.baseurl }}">返回主页</a>
+        </div>
+    </div>
+</body>
+
+</html>

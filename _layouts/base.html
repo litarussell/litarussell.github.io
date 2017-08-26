@@ -9,24 +9,7 @@
 
 <body>
     <div class="content">
-        <div class="sider">
-            <h3>文章标签</h3>
-            <ul>
-                <!-- <li>
-                    <a href="#">线性代数</a>
-                    <span>1篇</span>
-                </li> -->
-                {% for tag in site.tags %}
-                    <li>
-                        <a href="#">{{ tag | first }}</a>
-                        <span>{{ tag | last | size }}</span>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="main">
-            {{ content }}
-        </div>
+        {{ content }}
     </div>
 </body>
 
