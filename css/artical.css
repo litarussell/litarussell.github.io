@@ -16,8 +16,9 @@ body{
     padding: 2% 8%;
 }
 .date{
-    padding-right: 5%;
+    padding: 5% 5% 0 0;
     text-align: right;
+    color: #4a75b5;
 }
 .back{
     padding: 2% 5%;
