@@ -11,7 +11,8 @@
     <div class="content">
         <div class="date">
             <!-- {{ page.date | date_to_string }} -->
-            {{ page.date | date: "%Y年%m月%d日" }}
+            <span>最近修改时间：</span>
+            <span>{{ page.date | date: "%Y年%m月%d日" }}</span>
         </div>
         <div class="artical">
             {{ content }}
